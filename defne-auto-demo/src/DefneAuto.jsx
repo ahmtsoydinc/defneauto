@@ -138,9 +138,9 @@ function HeroSlider({ onEnter }) {
 
     // HEADER
     React.createElement("header",{style:{position:"absolute",top:0,left:0,right:0,zIndex:30,
-      height:70,display:"flex",alignItems:"center",justifyContent:"space-between",padding:"0 36px",
+      height:90,display:"flex",alignItems:"center",justifyContent:"space-between",padding:"0 36px",
       background:"linear-gradient(to bottom,"+s.bg+"cc 0%,transparent 100%)"}},
-      React.createElement(Logo,{h:42}),
+      React.createElement(Logo,{h:80}),
       React.createElement("div",{style:{display:"flex",alignItems:"center",gap:20}},
         React.createElement("a",{href:"tel:+905001234567",
           style:{display:"flex",alignItems:"center",gap:7,color:s.accent,
@@ -270,9 +270,9 @@ function CarListing({ cars, onContact, onBack }) {
 
     // Header
     React.createElement("header",{style:{background:"#0f1520",borderBottom:"1px solid rgba(255,255,255,0.08)",
-      padding:"0 36px",height:68,display:"flex",alignItems:"center",justifyContent:"space-between",
+      padding:"0 36px",height:88,display:"flex",alignItems:"center",justifyContent:"space-between",
       position:"sticky",top:0,zIndex:40}},
-      React.createElement(Logo,{h:40}),
+      React.createElement(Logo,{h:72}),
       React.createElement("div",{style:{display:"flex",gap:10,alignItems:"center"}},
         ["Dizel","Benzin","Manuel","Otomatik"].map(function(f){
           var act=filter===f;
@@ -449,7 +449,7 @@ function AdminPanel({ cars, setCars, leads, goBack }) {
   return React.createElement("div",{style:{display:"flex",height:"100vh",background:"#080c14",fontFamily:"Arial,sans-serif",overflow:"hidden"}},
     React.createElement("style",null,CSS),
     React.createElement("div",{style:{width:220,background:BG2,display:"flex",flexDirection:"column",flexShrink:0,borderRight:"1px solid "+BD,borderTop:"3px solid "+OR}},
-      React.createElement("div",{style:{padding:"18px 16px 14px",borderBottom:"1px solid "+BD}},React.createElement(Logo,{h:34}),React.createElement("div",{style:{marginTop:7,fontSize:9.5,color:TDIM,letterSpacing:1.5,textTransform:"uppercase"}},"Y\u00f6netim Paneli")),
+      React.createElement("div",{style:{padding:"18px 16px 14px",borderBottom:"1px solid "+BD}},React.createElement(Logo,{h:52}),React.createElement("div",{style:{marginTop:7,fontSize:9.5,color:TDIM,letterSpacing:1.5,textTransform:"uppercase"}},"Y\u00f6netim Paneli")),
       React.createElement("div",{style:{flex:1,padding:"8px"}},sideItems.map(function(it){var act=tab===it.id;return React.createElement("button",{key:it.id,onClick:function(){setTab(it.id);},style:{width:"100%",display:"flex",alignItems:"center",gap:10,padding:"10px 12px",borderRadius:8,border:"none",marginBottom:2,cursor:"pointer",textAlign:"left",background:act?"rgba(255,107,26,0.12)":"transparent",color:act?OR:TSUB,fontSize:13,fontWeight:600}},React.createElement(it.Ic,{size:14}),React.createElement("span",{style:{flex:1}},it.label),it.n>0&&React.createElement("span",{style:{background:act?OR:BG3,color:act?"#fff":TSUB,fontSize:10,fontWeight:700,borderRadius:10,padding:"1px 6px"}},it.n));})),
       React.createElement("div",{style:{padding:10,borderTop:"1px solid "+BD}},React.createElement("button",{onClick:goBack,style:{width:"100%",display:"flex",alignItems:"center",gap:7,justifyContent:"center",background:"transparent",border:"1px solid "+BD,color:TSUB,borderRadius:7,padding:"9px",fontSize:12,cursor:"pointer"}},React.createElement(ChevronLeft,{size:13})," Siteye D\u00f6n"))
     ),
