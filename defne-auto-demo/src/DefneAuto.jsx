@@ -138,10 +138,10 @@ function HeroSlider({ onEnter }) {
 
     // HEADER
     React.createElement("header",{style:{position:"absolute",top:0,left:0,right:0,zIndex:30,
-      height:90,display:"flex",alignItems:"center",justifyContent:"space-between",padding:"0 36px",
-      background:"linear-gradient(to bottom,"+s.bg+"cc 0%,transparent 100%)"}},
-      React.createElement(Logo,{h:80}),
-      React.createElement("div",{style:{display:"flex",alignItems:"center",gap:20}},
+      height:110,display:"flex",alignItems:"center",justifyContent:"center",padding:"0 36px",
+      background:"linear-gradient(to bottom,"+s.bg+"ee 0%,transparent 100%)"}},
+      React.createElement(Logo,{h:110}),
+      React.createElement("div",{style:{display:"flex",alignItems:"center",gap:14,position:"absolute",right:36,top:"50%",transform:"translateY(-50%)"}},
         React.createElement("a",{href:"tel:+905001234567",
           style:{display:"flex",alignItems:"center",gap:7,color:s.accent,
             background:"rgba(255,255,255,0.06)",border:"1px solid rgba(255,255,255,0.1)",
@@ -160,7 +160,7 @@ function HeroSlider({ onEnter }) {
     // SOL — İçerik
     React.createElement("div",{ className:"da-left", key:"left-"+animKey,
       style:{position:"absolute",left:0,top:0,bottom:55,width:"55%",zIndex:10,
-        display:"flex",flexDirection:"column",justifyContent:"center",padding:"0 0 0 48px"}},
+        display:"flex",flexDirection:"column",justifyContent:"center",padding:"110px 0 0 48px"}},
 
       React.createElement("div",{className:"da-a0",
         style:{display:"inline-flex",alignItems:"center",gap:7,background:"rgba(255,255,255,0.06)",
